@@ -8,15 +8,13 @@ Multi-page Layout – Includes Home, Resume, Projects, Blog, and Testimonials.
 
 Dark/Light Mode Toggle – Smooth toggle between themes.
 
-Skills Section – Technologies: HTML, CSS, JavaScript, React, Node.js, MongoDB, C, C++, Java, Python, and more.
+Skills Section – Technologies
 
 Education Timeline
 
-Primary Education – 2020
+Primary Education
 
-Higher Secondary – 2022
-
-BTech CSE – 2022–2026
+Higher Secondary
 
 Contact Form – Sends user messages directly to my email.
 
