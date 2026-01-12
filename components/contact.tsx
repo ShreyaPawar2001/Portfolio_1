@@ -101,14 +101,14 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      value: "pranshulgera0508@gmail.com",
-      link: "mailto:pranshulgera0508@gmail.com",
+      value: "shreyapawar0898@gmail.com",
+      link: "mailto:shreyapawar0898@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      value: "+91 7988604754",
-      link: "tel:+917988604754",
+      value: "9172402719",
+      link: "tel:+9172402719",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
@@ -165,7 +165,7 @@ export default function Contact() {
                 <h3 className="text-xl font-bold">Follow Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/pranshulgera"
+                    href="https://github.com/ShreyaPawar2001"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-card hover:bg-primary/10 transition-colors cursor-hover"
@@ -187,7 +187,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/pranshul-kumar-gera-9857a5269/"
+                    href="https://www.linkedin.com/in/shreya-pawar-b90032182/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-card hover:bg-primary/10 transition-colors cursor-hover"
@@ -210,28 +210,7 @@ export default function Contact() {
                       <circle cx="4" cy="4" r="2"></circle>
                     </svg>
                   </a>
-                  <a
-                    href="https://twitter.com/pranshulgera"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full bg-card hover:bg-primary/10 transition-colors cursor-hover"
-                    aria-label="Twitter"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-primary"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                    </svg>
-                  </a>
+                  
                 </div>
               </div>
             </motion.div>

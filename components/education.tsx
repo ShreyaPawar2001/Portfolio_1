@@ -33,25 +33,25 @@ export default function Education() {
 
   const education = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "Engineering University",
-      period: "2022 - 2026",
+      degree: "Bachelor of Technology in Electronics and TeleCommunication",
+      institution: "Savitribai Phule Pune University ",
+      period: "2020 - 2022",
       description:
-        "Currently pursuing a BTech in Computer Science with a focus on web development and software engineering. Maintaining a Good GPA and actively participating in technical clubs and hackathons.",
+        "Completed B.Tech in Electronics and TeleCommunication with a strong foundation in electronic circuits, signal processing, and communication systems.",
+    },
+    {
+      degree: "Diploma in Electronics and TeleCommunication",
+      institution: "Maharashtra State Board of Technical Education",
+      period: "2016 - 2019",
+      description:
+        "Completed Diploma in Electronics and TeleCommunication, gaining practical skills in circuit design, microcontrollers, and telecommunications.",
     },
     {
       degree: "Higher Secondary Education",
-      institution: "DAFFODIL PUBLIC SCHOOL",
-      period: "2021 - 2022",
+      institution: "GURUKUL SCHOOL",
+      period: "2015",
       description:
-        "Completed higher secondary education with a focus on Mathematics, Physics, and Chemistry. Graduated with distinction and received merit scholarship.",
-    },
-    {
-      degree: "Secondary Education",
-      institution: "SBP DAV CENTUARY PUBLIC SCHOOL",
-      period: "2019 - 2020",
-      description:
-        "Completed secondary education with excellent academic performance. Participated in various competitions and science exhibitions.",
+        "Completed higher secondary education with a focus on Mathematics,Physics, and Chemistry. Graduated with distinction and received merit scholarship.",
     },
   ]
 

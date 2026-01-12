@@ -45,7 +45,6 @@ export default function Skills() {
     { name: "Express.js", level: 80 },
     { name: "MongoDB", level: 75 },
     { name: "RESTful APIs", level: 85 },
-    { name: "GraphQL", level: 50 },
     { name: "Firebase", level: 70 },
   ]
 
@@ -59,9 +58,8 @@ export default function Skills() {
   ]
 
   const programmingLanguages = [
-    { name: "C", level: 85 },
-    { name: "C++", level: 85 },
-    { name: "Java", level: 75 },
+    { name: "JavaScript", level: 85 },
+    { name: "TypeScript", level: 85 },
     { name: "Python", level: 85 },
   ]
 
@@ -80,7 +78,6 @@ export default function Skills() {
     "Git",
     "GitHub",
     "REST API",
-    "GraphQL",
     "Firebase",
     "Material UI",
     "Bootstrap",
@@ -88,12 +85,10 @@ export default function Skills() {
     "Webpack",
     "Babel",
     "npm",
-    "Vercel",
     "Netlify",
 
-    "C",
-    "C++",
-    "Java",
+   
+    "JavaScript",
     "Python",
   ]
 

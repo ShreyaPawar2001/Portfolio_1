@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowDown, Github, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TypeAnimation } from "react-type-animation"
 import { useMobile } from "@/hooks/use-mobile"
@@ -39,19 +39,15 @@ export default function Hero() {
         this.size = Math.random() * 3 + 1
         this.speedX = (Math.random() - 0.5) * 1
         this.speedY = (Math.random() - 0.5) * 1
-        this.color = "#8b5cf6"
+        this.color = "#14B8A6" // teal particles
       }
 
       update() {
         this.x += this.speedX
         this.y += this.speedY
 
-        if (this.x > canvas.width || this.x < 0) {
-          this.speedX = -this.speedX
-        }
-        if (this.y > canvas.height || this.y < 0) {
-          this.speedY = -this.speedY
-        }
+        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX
+        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY
       }
 
       draw() {
@@ -79,8 +75,10 @@ export default function Hero() {
 
           if (distance < connectionDistance) {
             const opacity = 1 - distance / connectionDistance
-            ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`
-            ctx.lineWidth = 1
+
+ctx.strokeStyle = `rgba(139, 92, 246, ${0.8})` // fixed strong opacity
+ctx.lineWidth = 0.5
+
             ctx.beginPath()
             ctx.moveTo(particles[i].x, particles[i].y)
             ctx.lineTo(particles[j].x, particles[j].y)
@@ -94,23 +92,22 @@ export default function Hero() {
       if (!ctx) return
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update()
-        particles[i].draw()
-      }
+      particles.forEach(p => {
+        p.update()
+        p.draw()
+      })
+
       connectParticles()
       requestAnimationFrame(animate)
     }
 
     const handleResize = () => {
-      if (!canvas) return
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
     }
 
     init()
     animate()
-
     window.addEventListener("resize", handleResize)
 
     return () => {
@@ -119,8 +116,16 @@ export default function Hero() {
   }, [isMobile])
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {!isMobile && <canvas ref={canvasRef} className="absolute inset-0 w-full h-full -z-10" />}
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {!isMobile && (
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 w-full h-full -z-10"
+        />
+      )}
 
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -131,7 +136,7 @@ export default function Hero() {
             className="mb-4"
           >
             <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary mb-4">
-              MERN Stack Developer
+              Full Stack Engineer
             </span>
           </motion.div>
 
@@ -139,9 +144,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent
+                       bg-gradient-to-r from-purple-500 via-primary to-teal-400"
           >
-            Pranshul Kumar Gera
+            Shreyaa Pawar
           </motion.h1>
 
           <motion.div
@@ -158,7 +164,7 @@ export default function Hero() {
                 1000,
                 "I develop MERN stack solutions",
                 1000,
-                "I'm a BTech CSE student",
+                "I’m a working professional",
                 1000,
               ]}
               wrapper="span"
@@ -188,31 +194,20 @@ export default function Hero() {
             className="flex items-center justify-center gap-6"
           >
             <a
-              href="https://github.com/Pranshul8050"
+              href="https://github.com/ShreyaPawar2001"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors cursor-hover"
-              aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/pranshul-kumar-gera-9857a5269/"
+              href="https://www.linkedin.com/in/shreya-pawar-b90032182/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors cursor-hover"
-              aria-label="LinkedIn"
             >
               <Linkedin size={24} />
-            </a>
-            <a
-              href="https://x.com/Pranshul_8050"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors cursor-hover"
-              aria-label="Twitter"
-            >
-              <Twitter size={24} />
             </a>
           </motion.div>
         </div>
@@ -224,13 +219,12 @@ export default function Hero() {
         transition={{
           duration: 0.5,
           delay: 1,
-          repeat: Number.POSITIVE_INFINITY,
+          repeat: Infinity,
           repeatType: "reverse",
-          repeatDelay: 0.2,
         }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-hover"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-hover"
       >
-        <a href="#about" aria-label="Scroll down">
+        <a href="#about">
           <ArrowDown className="h-6 w-6 text-primary" />
         </a>
       </motion.div>

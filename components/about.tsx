@@ -56,8 +56,8 @@ export default function About() {
             <motion.div variants={itemVariants} className="relative">
               <div className="relative z-10 rounded-lg overflow-hidden border-4 border-primary/20">
                 <img
-                  src="/images/profile-shadow.jpg"
-                  alt="Pranshul Kumar Gera"
+                  src="/images/girl.jpg"
+                  alt="Shreyaa Pawar"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -66,10 +66,10 @@ export default function About() {
 
             <motion.div variants={itemVariants} className="space-y-6">
               <h3 className="text-2xl font-bold">
-                Hi, I'm <span className="text-primary">Pranshul Kumar Gera</span>
+                Hi, I'm <span className="text-primary">Shreyaa Pawar</span>
               </h3>
               <p className="text-muted-foreground">
-                I'm a MERN stack developer and a 3rd-year BTech CSE student, driven by a passion for turning ideas into
+                I'm a Full stack Engineer and a have  3years of expreince, driven by a passion for turning ideas into
                 powerful web experiences.
               </p>
               <p className="text-muted-foreground">
@@ -81,21 +81,21 @@ export default function About() {
                 continuous learning.
               </p>
               <p className="text-muted-foreground">
-                Outside the code editor? You'll find me exploring cutting-edge tech or leveling up at hackathons.
+                Outside the code editor? You'll find me exploring cutting-edge tech.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div>
                   <h4 className="font-medium mb-2">Name:</h4>
-                  <p className="text-muted-foreground">Pranshul Kumar Gera</p>
+                  <p className="text-muted-foreground">Shreyaa Pawar</p>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2">Email:</h4>
-                  <p className="text-muted-foreground">pranshulgera0508@gmail.com</p>
+                  <p className="text-muted-foreground">shreyapawar0898@gmail.com</p>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2">Education:</h4>
-                  <p className="text-muted-foreground">BTech CSE (3rd Year)</p>
+                  <p className="text-muted-foreground">BE</p>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2">Location:</h4>

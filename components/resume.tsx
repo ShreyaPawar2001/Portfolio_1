@@ -34,49 +34,82 @@ export default function Resume() {
 
   const experiences = [
     {
-      title: "Aicte Intership on AI Technologies",
-      company: "Edunet Foundation",
-      period: "Jan 2025 - Feb 2025",
+      title: "Full Stack Engineer",
+      company: "Sylvr",
+      period: "Jul 2025 - Present",
       description:
-        "Developed responsive user interfaces using React.js and implemented state management with Redux. Collaborated with the design team to create pixel-perfect UI components.",
+        "Developing end-to-end web applications using React.js and Chakra UI on the frontend, Node.js/Express/Mongoose with MongoDB on the backend, building and testing RESTful APIs with Postman, and solving complex problems across the full development lifecycle.",
     },
     {
-      title: "Frontend Development Intern",
-      company: "Ceeras",
-      period: "Jun 2024 - Aug 2024",
+      title: "Software development Intern",
+      company: "Sylvr",
+      period: "Feb 2025 - Jun 2025",
       description:
-        "Converted high-fidelity Figma designs into responsive, pixel-perfect frontend code using HTML, CSS, JavaScript, and React.js. Collaborated with the design team to ensure UI/UX consistency across devices, optimized components for performance, and maintained clean, scalable codebase aligned with modern web standards.",
+        "Contributed to scalable full-stack applications using React.js (v18.2), Node.js, MongoDB, and Chakra UI by building APIs, efficient data flows, and dynamic UI from Figma designs, while collaborating in code reviews, REST integrations, bug fixes, and Agile-based development cycles."
     },
     {
-      title: "Web Development Freelancer",
-      company: "Self-employed",
-      period: "Jan 2024 - Present",
+      title: "Frontend Developer",
+      company: "Traviti Apps",
+      period: "Feb 2025 - Jun 2025",
       description:
-        "Help in Building custom websites for small businesses and startups. Implemented full-stack solutions using the MERN stack, focusing on performance and user experience.",
+        "Improved dashboard modules, authentication flows, frontend–backend integration, and mobile-first UI performance, resulting in fewer login issues, reduced API failures, and a faster, more stable user experience.",
     },
+    {
+      title: "Web Developer",
+      company: "Maximize Market Research",
+      period: "Dec 2023 - Jun 2024",
+      description:
+       "Developed and maintained scalable, responsive user interfaces, collaborated with cross-functional teams to deliver production-ready web applications, resolved frontend performance issues, and adopted modern web technologies to enhance stability and user experience."
+
+    },
+    // {
+    //   title: "Angular Developer",
+    //   company: "Infotel India",
+    //   period: "Aug 2022 - Nov 2023",
+    //   description:
+    //    "Developed customer requirement, hotel management, and e-commerce applications by building responsive cross-browser UIs with HTML5, CSS3, and JavaScript, and integrating RESTful APIs to deliver dynamic, user-centric solutions."
+    // },
   ]
 
   const achievements = [
     {
-      title: "Hackathon Winner",
-      organization: "Konark Fest 2025",
-      period: "Feb 2025",
+      title: "Full Stack Development Certification",
+      organization: "Internshala",
+      Credential: "9f9on60mhq60wbbh",
+      description: "Completed a comprehensive Full Stack Development course covering frontend and backend technologies.",
+    },
+     {
+      title: "Cracking the Code: DSA in JavaScript - I Certification",
+      organization: "Internshala",
+      Credential: "he59anek23u",
       description:
-        "Won third place in a 24-hour hackathon by developing an innovative solution on Education by using Artificial Intelligence",
+        "Completed an advanced Data Structures and Algorithms .",
     },
     {
-      title: "Web Development Certification",
-      organization: "IBM",
-      period: "Aug 2024",
+      title: " Cracking the Code: DSA in JavaScript - II",
+      organization: "Internshala",
+      Credential: "9dvnaosoiq5",
       description:
-        "Completed an advanced web development course covering modern JavaScript frameworks and backend technologies.",
+        " Completed an advanced Data Structures and Algorithms .",
     },
     {
-      title: "Group Discussion",
-      organization: "University",
-      period: "2022-2023",
-      description: "Recognized for 1st Position in Group Discussion",
+      title: "Git and GitHub",
+      organization: "Internshala",
+      Credential: "e796uzz8xed",
+      description:
+        "Completed a course on version control using Git and GitHub for collaborative software development.",
     },
+
+    {
+      title: " Build Your Own Capstone Project",
+      organization: "Internshala",
+      Credential: "jjk2lxp95x8",
+      description:
+      "Completed a capstone project integrating full-stack development skills to create a functional web application.",
+    }  
+      
+   
+    
   ]
 
   return (
@@ -139,7 +172,7 @@ export default function Resume() {
                         <h4 className="text-lg font-bold">{achievement.title}</h4>
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">
                           <Calendar className="mr-1 h-3 w-3" />
-                          {achievement.period}
+                          {achievement.Credential}
                         </span>
                       </div>
                       <p className="text-sm text-primary mb-3">{achievement.organization}</p>

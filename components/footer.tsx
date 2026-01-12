@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="text-muted-foreground text-center md:text-left">
-              © {new Date().getFullYear()} Pranshul Kumar Gera. All rights reserved.
+              © {new Date().getFullYear()} Shreyaa Pawar. All rights reserved.
             </p>
           </motion.div>
 
