@@ -26,7 +26,7 @@ export default function Projects() {
       title: "Weather Explorer App",
       description:
         "Weather app built with React + Tailwind using Open-Meteo & RestCountries APIs.",
-      image: "/images/World exploer.jpg",
+      image: "/images/Worldexploer.jpg",
       tags: ["React", "JavaScript", "API", "Tailwind"],
       liveLink: "https://nkc483-5173.csb.app/",
       githubLink: "https://github.com/ShreyaPawar2001/react-weather-app",
