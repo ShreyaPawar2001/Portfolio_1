@@ -1,6 +1,6 @@
 Shreyaa Pawar - Portfolio Website
 
-Welcome to my personal developer portfolio website! This is a multi-page, fully responsive, and animated web application built to showcase my skills, projects, blogs, and more. With a playful yet elegant design, this site reflects my personality as a passionate MERN Stack Developer and BTech CSE student.
+Welcome to my personal developer portfolio website! This is a multi-page, fully responsive, and animated web application built to showcase my skills, projects, blogs, and more. With a playful yet elegant design, this site reflects my personality as a passionate MERN Stack Developert.
 
 Features
 
